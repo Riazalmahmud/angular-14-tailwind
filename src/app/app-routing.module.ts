@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./main/main-routing.module').then((m) => m.MainRoutingModule),
+    loadChildren: () => import('./main/main.module').then(m=>m.MainModule)
+     
   },
   {
     path: 'shared',
